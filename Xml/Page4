@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="@drawable/page4"
+    tools:context=".Page4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".4"
+        android:gravity = "center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:gravity = "center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="One afternoon, Turtle and Rabbit met on "
+            android:paddingRight="50dp"
+            android:textSize = "17dp"
+            android:textStyle="bold"
+            android:layout_marginTop="-18dp"
+            android:textColor="#FFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="the road. Rabbit teased Turtle with his small"
+            android:paddingRight="20dp"
+            android:textSize = "17dp"
+            android:textColor="#FFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="feet which made him walk very slowly."
+            android:paddingRight="60dp"
+            android:textSize = "17dp"
+            android:textColor="#FFF" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:text="Turtle was insulted by Rabbit's jokes. In"
+            android:paddingLeft="60dp"
+            android:textSize = "17dp"
+            android:textColor="#FFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Turtle's desire to prove Rabbit wrong in his"
+            android:paddingLeft="40dp"
+            android:textSize = "17dp"
+            android:textColor="#FFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="accusations, he challenged Rabbit and said"
+            android:paddingLeft="30dp"
+            android:textSize = "17dp"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:text="'If you want to test my skills, why don't we go"
+            android:textSize = "17dp"
+            android:textColor="#FFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text=" through a contest. You may be fast but my"
+            android:textSize = "17dp"
+            android:textColor="#FFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="resistance is strong,' the Turtle challenged."
+            android:textSize = "17dp"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        android:gravity = "center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210dp"
+            android:text="Page 1"
+            android:textStyle="bold"
+            android:textSize = "15dp"
+            android:textColor="#28390D" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:gravity = "center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="139dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#28390D"
+            android:onClick="goToPage2"
+            android:text="Back"
+            android:textColor="#FFF"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="139dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/back_button"
+            android:backgroundTint="#28390D"
+            android:onClick="goToPage5"
+            android:text="Next"
+            android:textColor="#FFF"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</LinearLayout>
