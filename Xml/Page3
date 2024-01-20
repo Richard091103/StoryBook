@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="@drawable/page3"
+    tools:context=".Page3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:gravity = "center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="There are a couple of moral lessons we can"
+            android:textSize = "15dp"
+            android:layout_marginTop="-18dp"
+            android:textColor="#FFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="learn from this story. The Rabbit teaches that"
+            android:textSize = "15dp"
+            android:textColor="#FFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="overconfidence can sometimes ruin you. While the"
+            android:textSize = "15dp"
+            android:textColor="#FFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="turtle teaches us about the power of"
+            android:textSize = "15dp"
+            android:textColor="#FFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="perseverance. Even if all the odds are stacked"
+            android:textSize = "15dp"
+            android:textColor="#FFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="against you, never give up. Sometimes, life is"
+            android:textSize = "15dp"
+            android:textColor="#FFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="not about who’s the fastest or the strongest;"
+            android:textSize = "15dp"
+            android:textColor="#FFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="it’s about who is the most consistent."
+            android:textStyle="bold"
+            android:textSize = "15dp"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:gravity = "center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="139dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#28390D"
+            android:onClick="goToHomePage"
+            android:text="Home Page"
+            android:textColor="#FFF"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="139dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/back_button"
+            android:backgroundTint="#28390D"
+            android:onClick="goToExit"
+            android:text="Finish"
+            android:textColor="#FFF"
+            android:textSize="15dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
